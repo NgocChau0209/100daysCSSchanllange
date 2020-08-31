@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: "BalsamiqSans";
+    src: url('../font/BalsamiqSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Alata";
+    src: url('../font/Alata-Regular.ttf');
+}
+
+$dark-gray: hsl(0, 0%, 59%);
+$very-dark-gray:hsl(0, 0%, 17%);
+$white: white;
+
+.ip-address {
+    &__banner {
+        position: relative;
+    }
+
+    &__image {
+        img {
+            width: 100vw;
+            height: auto;
+        }
+    }
+
+    &__search {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__button-search {
+        padding: 16px 24px;
+        background-color: $very-dark-gray;
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    &__result {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: 900px;
+        border-radius: 20px;
+        display: flex;
+        background-color: $white;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    }
+
+    &__info-item {
+        width: calc(900px / 4);
+    }
+
+    &__info-item-text {
+        font-size: 13px;
+        letter-spacing: 2px;
+        color: $dark-gray;
+        text-transform: uppercase;
+        font-family: "Alata";
+    }
+
+    &__info-item-value {
+        margin-top: 10px;
+        font-size: 20px;
+        color: $very-dark-gray;
+        font-family: "BalsamiqSans";
+    }
+
+    &__map {
+        position: relative;
+        height: 73vh;
+        z-index: -333;
+    }
+
+    &__attribution {
+        background-color: $white;
+        z-index: 3333;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 10px;
+        font-size: 11px;
+        text-align: center;
+
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    box-shadow: none;
+    color: $dark-gray;
+    background-color: $white;
+    text-align: left;
+    outline: none;
+    padding: 16px 24px;
+    width: 400px;
+    border-radius: 20px 0 0 20px;
+}

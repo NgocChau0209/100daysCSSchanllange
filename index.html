@@ -5,41 +5,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="/IP Address Tracker /style/style.css">
+  <link rel="stylesheet" href="/IP Address Tracker /style/loading.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
   <title>Frontend Mentor | IP Address Tracker</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
-
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-  UTC
-  <!-- add offset value dynamically using the API -->
-  ISP
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">ngocchautrantp@gmail.com</a>.
+  <div class="loadingio-spinner-dual-ring-cpq53fatas loading">
+    <div class="ldio-m9o8ittks2">
+      <div></div>
+      <div>
+        <div></div>
+      </div>
+    </div>
   </div>
+
+  <div class="ip-address__banner">
+    <div class="ip-address__image">
+      <img src="/IP Address Tracker /images/pattern-bg.png" alt="">
+    </div>
+    <div class="ip-address__search">
+      <div class="ip-address-search__input">
+        <input type="text" placeholder="Search for any IP address or domain" id="input-info">
+      </div>
+      <div class="ip-address__button-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+          <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" /></svg>
+      </div>
+    </div>
+    <div class="ip-address__result">
+      <div class="ip-address__info-item">
+        <div class="ip-address__info-item-text">
+          IP
+        </div>
+        <div class="ip-address__info-item-value" id="ip">
+
+        </div>
+        <div class="ip-address_info-line"></div>
+      </div>
+
+      <div class="ip-address__info-item">
+        <div class="ip-address__info-item-text">
+          location
+        </div>
+        <div class="ip-address__info-item-value" id="country">
+
+        </div>
+        <div class="ip-address_info-line"></div>
+      </div>
+
+      <div class="ip-address__info-item">
+        <div class="ip-address__info-item-text">
+          timezone
+        </div>
+        <div class="ip-address__info-item-value" id="timezone">
+
+        </div>
+        <div class="ip-address_info-line"></div>
+      </div>
+
+      <div class="ip-address__info-item">
+        <div class="ip-address__info-item-text">
+          isp
+        </div>
+        <div class="ip-address__info-item-value" id="isp">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ip-address__map" id="mymap">
+    <div class="ip-address__attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">ngocchautrantp@gmail.com</a>.
+    </div>
+  </div>
+
+  <script src="./IP Address Tracker /js/script.js">
+  </script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
 </body>
 
 </html>

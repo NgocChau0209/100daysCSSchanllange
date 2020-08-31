@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "BalsamiqSans";
+  src: url("../font/BalsamiqSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Alata";
+  src: url("../font/Alata-Regular.ttf");
+}
+
+.ip-address__banner {
+  position: relative;
+}
+
+.ip-address__image img {
+  width: 100vw;
+  height: auto;
+}
+
+.ip-address__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.ip-address__button-search {
+  padding: 16px 24px;
+  background-color: #2b2b2b;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.ip-address__result {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  width: 900px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  padding: 20px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ip-address__info-item {
+  width: calc(900px / 4);
+}
+
+.ip-address__info-item-text {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #969696;
+  text-transform: uppercase;
+  font-family: "Alata";
+}
+
+.ip-address__info-item-value {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #2b2b2b;
+  font-family: "BalsamiqSans";
+}
+
+.ip-address__map {
+  position: relative;
+  height: 73vh;
+  z-index: -333;
+}
+
+.ip-address__attribution {
+  background-color: white;
+  z-index: 3333;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.ip-address__attribution a {
+  color: #3e52a3;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #969696;
+  background-color: white;
+  text-align: left;
+  outline: none;
+  padding: 16px 24px;
+  width: 400px;
+  border-radius: 20px 0 0 20px;
+}
+/*# sourceMappingURL=style.css.map */
